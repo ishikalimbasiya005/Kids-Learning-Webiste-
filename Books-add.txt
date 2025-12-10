@@ -1,3 +1,13 @@
+--> Adding Books After Deletion (Admin) 
+
+If you delete any book from the Admin panel and want to insert it again, you can do it easily using the Book Insert content provided.
+1] Simply copy the content from the provided files or JSON data
+2] Paste it into the Insert Book form in the Admin panel
+3] Click Submit / Insert to add the book back to the database
+This allows you to restore deleted books quickly without manually recreating all details.
+
+---------------
+
 English book add :
 title : 🐾Verbs in Action!
 path : /Verb
@@ -32,9 +42,4 @@ image : assets/Honesty.jpg
 description : Honesty means always telling the truth and being real, even when it is hard.It makes a child’s character bright and strong.
 button : Keep it Real
 
-
-Comments: --------------------------
-“This website is very colorful and engaging. My child loves learning alphabets here!”
-Great design and simple navigation. Perfect for kids.”
-“Very useful for early learners. Please add more stories and games.”
 
