@@ -1,0 +1,5 @@
+kids_backend/node_modules
+magic-learn-world/node_modules
+.env
+.vscode
+.DS_Store

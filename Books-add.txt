@@ -1,0 +1,40 @@
+English book add :
+title : 🐾Verbs in Action!
+path : /Verb
+image : assets/verbs.jpg
+2 image: assets/verb-card.jpg
+description : fun with cards! Perfect for kids to practice daily verbs with smiles
+button : Try Action
+
+
+Science book add:
+title : 🌿 Discover Trees
+path : /Trees
+image: assets/trees-card.jpg
+2- image: assets/tree-cards.jpg
+description : Learn about different types of trees around us.Trees give us fresh air, fruits, and shade to play under.
+button : Tree World
+
+Math book add :
+title : 🤝Let’s Add Together
+path : /Addition
+image: assets/Addition-card.jpg
+2 image: assets/addition-cards.jpg
+description : Addition means joining things to get more.
+button : Let’s Add Now
+
+
+Skill book add :
+title : 🌼 Honest is Best
+path : /Honest
+image : assets/Honesty.jpg
+2 image : assets/skillBook1.jpg
+description : Honesty means always telling the truth and being real, even when it is hard.It makes a child’s character bright and strong.
+button : Keep it Real
+
+
+Comments: --------------------------
+“This website is very colorful and engaging. My child loves learning alphabets here!”
+Great design and simple navigation. Perfect for kids.”
+“Very useful for early learners. Please add more stories and games.”
+
