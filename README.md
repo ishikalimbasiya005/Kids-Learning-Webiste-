@@ -7,7 +7,16 @@ The website is designed for kids to learn through interactive content and allows
 ## Demo:
 
 1] Login-Page:
+
 ![login-page Screenshot](login-page.png)
+
+2] Home-Page:
+
+![Homepage Screenshot](Home-page.png)
+
+3] Admin-Dashboard:
+
+![Dashboard Screenshot](Admin-dashboard.png)
 
 ---
 
