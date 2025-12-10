@@ -1,0 +1,160 @@
+.Sign-banner {
+    display: block;
+    clear: both;
+    margin-bottom: 2%;
+}
+
+.Sign-banner .sign-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sign-outer {
+    display: block;
+    clear: both;
+}
+
+.sign-outer .sign-inner {
+    display: block;
+}
+
+.sign-outer .sign-inner .sign-block {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.sign-outer .sign-inner .sign-block .sign-cards {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.sign-outer .sign-inner .sign-block .sign-cards .sign-img {
+    display: block;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.sign-outer .sign-inner .sign-block .sign-cards .sign-img img {
+    display: block;
+    width: 70%;
+    margin-bottom: 10%;
+    height: auto;
+}
+
+.sign-outer .sign-inner .sign-block .sign-cards .sign-img img:hover {
+    display: block;
+    box-shadow: 4px 4px 10px black;
+    transform: scale(1.1, 1.1);
+    transition: all 02s ease;
+    cursor: pointer;
+}
+
+.sign-outer .sign-inner .sign-block .sign-cards .sign-img .equal_to {
+    display: block;
+    width: 70%;
+    margin-left: 70%;
+    margin-bottom: 10%;
+    height: auto;
+}
+
+.back-btn-sign {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: #ed86a4;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(250%);
+    margin-bottom: 2%;
+    margin-top: -20px;
+}
+
+.sign-footer-img {
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+}
+
+/* Start Media Query */
+@media (max-width: 991px) {
+    .sign-outer .sign-inner .sign-block .sign-cards .sign-img img {
+        width: 100%;
+    }
+
+    .sign-outer .sign-inner .sign-block .sign-cards .sign-img {
+        margin-left: 60px;
+    }
+
+    .sign-outer .sign-inner .sign-block .sign-cards .sign-img .equal_to {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .back-btn-sign {
+        padding: 5px;
+        margin-top: -8px;
+    }
+
+    .sign-footer-img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 639px) {
+    .Sign-banner .sign-banner {
+        height: 150px;
+    }
+
+    .Sign-banner {
+        margin-bottom: 10%;
+    }
+
+    .sign-outer .sign-inner .sign-block {
+        display: block;
+    }
+
+    .sign-outer .sign-inner .sign-block .sign-cards {
+        width: 100%;
+    }
+
+    .sign-outer .sign-inner .sign-block .sign-cards .sign-img .equal_to {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .back-btn-sign {
+        font-size: 30px;
+        padding: 13px;
+        transform: translateX(200%);
+    }
+
+    .sign-footer-img {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .back-btn-sign {
+        font-size: 20px;
+        transform: translateX(166%);
+    }
+
+    .Sign-banner .sign-banner {
+        height: 100px;
+    }
+
+    .sign-footer-img {
+        width: 75%;
+    }
+}
+
+/* end media query */

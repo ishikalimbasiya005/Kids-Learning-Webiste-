@@ -1,0 +1,463 @@
+.planets-banner {
+    display: block;
+    clear: both;
+    box-shadow: 4px 4px 10px #121341;
+}
+
+.planets-banner .planet {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 10px #a260f1;
+    margin-bottom: 4px;
+}
+
+.planet-outer {
+    display: flex;
+    justify-content: center;
+    background-image: url('../../public/assets/solar-system-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 5%;
+}
+
+
+.planet-outer .planet-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.planet-outer .planet-inner .planet-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* dono center */
+    text-align: center;
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img {
+    display: block;
+    max-width: 500%;
+    /* planets ka default size */
+    height: auto;
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .sun {
+    display: block;
+    width: 100%;
+    height: auto;
+    animation: sun 30s infinite ease-in;
+}
+
+@keyframes sun {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text {
+    display: block;
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .sun-name {
+    display: block;
+    font-size: 40px;
+    color: orange;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .mercury {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+    animation: mercury 30s infinite;
+}
+
+@keyframes mercury {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .mercury-name {
+    display: block;
+    font-size: 30px;
+    color: #d7c5a0;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .venus {
+    display: block;
+    width: 300px;
+    height: auto;
+    animation: venus 30s infinite ease-in;
+}
+
+@keyframes venus {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .venus-name {
+    display: block;
+    font-size: 30px;
+    color: #fdcf61;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .earth {
+    display: block;
+    width: 500px;
+    height: auto;
+    animation: earth 30s infinite;
+}
+
+@keyframes earth {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .earth-name {
+    display: block;
+    font-size: 40px;
+    color: #a4a8b3;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .mars {
+    display: block;
+    width: 250px;
+    height: auto;
+    animation: mars 30s infinite;
+}
+
+@keyframes mars {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .mars-name {
+    display: block;
+    font-size: 30px;
+    color: #c6c1ba;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .jupiter {
+    display: block;
+    width: 400px;
+    height: auto;
+    animation: jupiter 30s infinite;
+}
+
+@keyframes jupiter {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .jupiter-name {
+    display: block;
+    font-size: 35px;
+    color: #6f6144;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .saturn {
+    display: block;
+    width: 500px;
+    height: auto;
+    animation: saturn 30s infinite;
+}
+
+@keyframes saturn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .saturn-name {
+    display: block;
+    font-size: 40px;
+    color: #c4b9a7;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .uranus {
+    display: block;
+    width: 350px;
+    height: auto;
+    animation: uranus 30s infinite;
+}
+
+@keyframes uranus {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .uranus-name {
+    display: block;
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .neptune {
+    display: block;
+    width: 400px;
+    height: auto;
+    animation: neptune 30s infinite;
+}
+
+@keyframes neptune {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .neptune-name {
+    display: block;
+    font-size: 35px;
+    color: #7b9eb9;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .pluto {
+    display: block;
+    width: 300px;
+    height: auto;
+    animation: pluto 30s infinite;
+}
+
+@keyframes pluto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .pluto-name {
+    display: block;
+    font-size: 30px;
+    color: #ded4c9;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-img .moon {
+    display: block;
+    width: 350px;
+    height: auto;
+    animation: moon 30s infinite;
+}
+
+@keyframes moon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.planet-outer .planet-inner .planet-block .planet-cards .planet-text .moon-name {
+    display: block;
+    font-size: 35px;
+    color: #cfcfce;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+
+.back-btn-planets {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: lightcoral;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(250%);
+    margin-bottom: 2%;
+    margin-top: 20px;
+}
+
+.planet-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.planet-text h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #253863;
+    margin-bottom: 6px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.planet-desc {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #ffa500;
+    background: #6059a7;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.planet-desc:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+    background: #fdf4e7;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .planet-text h4 {
+        font-size: 18px;
+    }
+
+    .planet-desc {
+        font-size: 14px;
+        padding: 8px 10px;
+        max-width: 160px;
+    }
+}
+
+
+/* start Media Query */
+@media (max-width:639px) {
+    .planet-outer .planet-inner .planet-block .planet-cards .planet-img .saturn {
+        width: 400px;
+    }
+}
+
+
+@media (max-width:479px) {
+    .planet-outer .planet-inner .planet-block .planet-cards .planet-img .sun {
+        width: 390px;
+    }
+
+    .planet-outer .planet-inner .planet-block .planet-cards .planet-img .venus {
+        width: 250px;
+    }
+
+    .planet-outer .planet-inner .planet-block .planet-cards .planet-img .earth {
+        width: 400px;
+    }
+
+
+    .planet-outer .planet-inner .planet-block .planet-cards .planet-img .jupiter {
+        width: 350px;
+    }
+
+    .planet-outer .planet-inner .planet-block .planet-cards .planet-img .saturn {
+        width: 270px;
+    }
+
+    .planet-outer .planet-inner .planet-block .planet-cards .planet-img .uranus {
+        width: 250px;
+    }
+
+    .planet-outer .planet-inner .planet-block .planet-cards .planet-img .neptune {
+        width: 300px;
+    }
+
+    .back-btn-planets {
+        display: block;
+        font-size: 19px;
+        padding: 18px;
+        width: 15%;
+        transform: translateX(130%);
+    }
+}
+
+
+/* and media query */

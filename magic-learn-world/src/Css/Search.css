@@ -1,0 +1,150 @@
+/* 🔹 Search Form Container */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #405176;
+  gap: 10px;
+}
+
+/* 🔹 Input Field */
+.search-input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #f0f8ff;
+  color: #000;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.search-input:focus {
+  border-color: #00c3e6;
+  box-shadow: 0 0 5px rgba(0, 195, 230, 0.5);
+}
+
+/* 🔹 Search Button */
+.search-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #00c3e6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: #009bb3;
+}
+
+/* 🔹 Dropdown Container */
+.search-data {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: #f0f4ff;
+  border: 2px solid #405176;
+  border-radius: 10px;
+  z-index: 100;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 Close Button Centered */
+.search-close {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto 15px auto; /* center horizontally + margin below */
+}
+
+/* 🔹 Result Buttons Vertical */
+.search-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  gap: 10px;
+}
+
+.search-buttons span {
+  color: #223059;
+  font-weight: 500;
+}
+
+/* 🔹 Open Button */
+.search-open {
+  padding: 5px 12px;
+  background-color: #00c3e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-open:hover {
+  background-color: #009bb3;
+}
+
+/* Start Media Query */
+@media (max-width: 639px) {
+  .search-form {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .search-button {
+    width: 90%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .search-data {
+    width: 95%;
+    top: 80px;
+    padding: 8px;
+  }
+
+  .search-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .search-open {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .search-close {
+    font-size: 28px;
+    padding: 4px 8px;
+  }
+}
+/* end media query */

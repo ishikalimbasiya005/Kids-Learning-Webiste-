@@ -1,0 +1,77 @@
+.manner-banner {
+    display: block;
+    clear: both;
+    margin-bottom: 5%;
+}
+
+.manner-banner .manner-banner-img {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+.manner-outer {
+    display: block;
+    clear: both;
+}
+
+.manner-outer .manner-inner {
+    display: block;
+}
+
+.manner-outer .manner-inner .manner-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12%;
+    box-sizing: border-box;
+}
+
+.manner-outer .manner-inner .manner-block .manner-card {
+    display: block;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.manner-outer .manner-inner .manner-block .manner-card img {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 5px dotted #6e668e;
+}
+
+.manner-outer .manner-inner .manner-block .manner-card img:hover {
+    display: block;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px #6e668e;
+}
+
+/* Start Media Query */
+@media (max-width: 991px) {
+    .manner-banner .manner-banner-img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .manner-banner .manner-banner-img {
+        height: 220px;
+    }
+
+    .manner-outer .manner-inner .manner-block {
+        padding-left: 5%;
+    }
+
+    .manner-outer .manner-inner .manner-block .manner-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .manner-outer .manner-inner .manner-block .manner-card img {
+        width: 90%;
+    }
+}
+
+/* end media query */

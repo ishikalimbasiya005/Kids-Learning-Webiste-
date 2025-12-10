@@ -1,0 +1,199 @@
+.color-img {
+    display: block;
+    clear: both;
+    background-image: linear-gradient(to right, red, pink, #a70bff, #10c1e0, #180ecf, orange);
+}
+
+.color-img img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.color-outer {
+    display: block;
+    clear: both;
+    background-image: url('/public/assets/color-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.color-outer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+
+.color-outer .color-inner {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.color-outer .color-inner .colors-image-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    padding-top: 3%;
+}
+
+.color-outer .color-inner .colors-image-card .color-card {
+    display: block;
+    width: 33.33%;
+    margin-bottom: 5%;
+}
+
+.color-outer .color-inner .colors-image-card .color-card:hover {
+    display: block;
+    width: 33.33%;
+    margin-bottom: 5%;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .orange {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid orange;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .green {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid green;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .purple {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid purple;
+    border-radius: 10px;
+}
+
+
+.color-outer .color-inner .colors-image-card .color-card .blue {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid blue;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .white {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid #dcdae4;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .yellow {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid yellow;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .pink {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid pink;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .grey {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid grey;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .brown {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid brown;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .color-card .black {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+
+.color-outer .color-inner .colors-image-card .doremon-color {
+    display: block;
+    width: 40%;
+    height: auto;
+    transform: translateX(6%);
+}
+
+.back-btn-colors {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: lightcoral;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(250%);
+    margin-bottom: 2%;
+}
+
+/* start media query */
+@media (max-width : 479px) {
+    .color-outer .color-inner .colors-image-card .color-card {
+        width: 50%;
+    }
+
+    .color-outer .color-inner .colors-image-card .color-card:hover {
+        display: block;
+        width: 50%;
+        margin-bottom: 5%;
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .color-outer .color-inner .colors-image-card .doremon-color {
+        display: block;
+        width: 50%;
+        height: auto;
+        transform: translateX(6%);
+    }
+
+    .back-btn-colors {
+        display: block;
+        font-size: 15px;
+        padding: 8px;
+        background-color: lightcoral;
+        color: white;
+        width: 16%;
+        border: 1px solid black;
+        text-align: center;
+        border-radius: 15px;
+        transform: translate(193%, -14%);
+    }
+}
+
+/* end media query */

@@ -1,0 +1,166 @@
+.verb-banner {
+    display: block;
+    clear: both;
+}
+
+.verb-banner .verb-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.verb-outer {
+    display: block;
+    clear: both;
+    background-image: url('../../public/assets/verb-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.verb-outer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.verb-outer .verb-inner {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.verb-outer .verb-inner .verb-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    box-sizing: border-box;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 15px;
+}
+.verb-outer .verb-inner .verb-block .verb-card:hover {
+    animation: verb 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+@keyframes verb {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .play {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .wash {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .dance {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .hold {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .cook {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .eat {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .listen {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .bounce {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .night {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .morning {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .carry {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.verb-outer .verb-inner .verb-block .verb-card .cry {
+    display: block;
+    width: 60%;
+    height: auto;
+}
+
+.back-btn-verb {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: lightcoral;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(204%);
+    margin-bottom: 2%;
+}
+
+/* start media query */
+@media (max-width: 479px) {
+    .verb-outer .verb-inner .verb-block .verb-card {
+        width: 100%;
+    }
+
+    .back-btn-verb {
+        font-size: 15px;
+        transform: translateX(130%);
+    }
+}
+
+/* end media query */

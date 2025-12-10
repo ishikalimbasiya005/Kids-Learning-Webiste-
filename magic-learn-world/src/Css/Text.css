@@ -1,0 +1,83 @@
+.text-outer{
+    display: block;
+    clear: both;
+}
+
+.text-outer .text-inner{
+    display: block;
+}
+
+.text-outer .text-inner .text-block {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.text-outer .text-inner .text-block p {
+    display: block;
+    width: 500px;
+    font-size: 25px;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    color: #900d40;
+    background-color: #daa9bd;
+    padding: 20px;
+    border: 1px solid #900d40;
+    border-radius: 22px;
+}
+
+.text-outer .text-inner .text-block p:hover {
+    display: block;
+    transform: scale(1.1, 1.1);
+    transition: all 0.4s ease-in;
+    box-shadow: 4px 4px 10px;
+}
+
+.text-outer .text-inner .text-block p span {
+    display: inline;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #900d40;
+    font-weight: 700;
+}
+
+/* start Media Query */
+@media (max-width:767px) {
+    .text-outer .text-inner .text-block p {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .text-outer .text-inner .text-block {
+        margin-top: 8%;
+        margin-bottom: 10%;
+    }
+
+    .text-outer .text-inner .text-block p span {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 639px) {
+     .text-outer .text-inner .text-block p {
+        width: 400px;
+        font-size: 13px;
+    }
+
+    .text-outer .text-inner .text-block p span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 479px) {
+    .text-outer .text-inner .text-block p {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .text-outer .text-inner .text-block {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+/* end media query */

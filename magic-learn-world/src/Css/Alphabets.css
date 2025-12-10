@@ -1,0 +1,100 @@
+ .atoz-banner {
+     display: block;
+     width: 100%;
+     height: auto;
+     margin-bottom: 2%;
+ }
+
+ .alphabets-outer {
+     display: block;
+     clear: both;
+ }
+
+ .alphabets-outer .alphabets-inner {
+     display: block;
+     margin-left: 7%;
+ }
+
+ .alphabets-outer .alphabets-inner .alphabet-book {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .alphabets-outer .alphabets-inner .alphabet-book .alphabet-cover {
+     display: block;
+     width: 33.33%;
+ }
+
+ .alphabets-outer .alphabets-inner .alphabet-book .alphabet-cover .alphabet-imgs {
+     display: block;
+ }
+
+ .alphabets-outer .alphabets-inner .alphabet-book .alphabet-cover .alphabet-imgs img {
+     display: block;
+     width: 70%;
+     height: auto;
+     margin-bottom: 10%;
+ }
+
+ .alphabets-outer .alphabets-inner .alphabet-book .alphabet-cover .alphabet-imgs img:hover {
+     cursor: pointer;
+     transform: scale(1.1);
+     transition: all 0.4s ease;
+     animation: click 0.4s ease;
+ }
+
+ @keyframes click {
+     0% {
+         transform: scale(1);
+     }
+
+     50% {
+         transform: scale(1.1);
+     }
+
+     100% {
+         transform: scale(1);
+     }
+
+ }
+
+ .alphabet-small-img {
+     display: block;
+     width: 30%;
+     height: auto;
+ }
+
+ .back-btn-alphabets {
+     display: block;
+     font-size: 25px;
+     padding: 8px;
+     background-color: lightcoral;
+     color: white;
+     width: 15%;
+     border: 1px solid black;
+     text-align: center;
+     border-radius: 15px;
+ }
+
+ /* media query start */
+ @media (max-width:479px) {
+
+     .alphabets-outer .alphabets-inner .alphabet-book .alphabet-cover {
+         display: block;
+         width: 50%;
+     }
+
+     .alphabet-small-img {
+         display: block;
+         width: 40%;
+         height: auto;
+     }
+
+     body .back-btn-alphabets {
+         font-size: 16px;
+         transform: translateX(100%);
+         height: 1%;
+     }
+ }
+
+ /* end media query */

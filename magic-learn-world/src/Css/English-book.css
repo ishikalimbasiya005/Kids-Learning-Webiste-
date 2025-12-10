@@ -1,0 +1,253 @@
+.english-banner-img {
+    display: block;
+    box-shadow: 4px 4px 10px #01c3e8;
+}
+
+.english-banner-img img {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.english-outer {
+    display: block;
+    clear: both;
+}
+
+.english-outer .english-inner {
+    display: block;
+}
+
+.english-outer .english-inner .english-book-block {
+    display: inline-block;
+}
+
+.english-outer .english-inner .english-book-block .english-books {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 5px double #00c2e6;
+    width: 70%;
+    height: 280px;
+    margin-left: 15%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.english-outer .english-inner .english-book-block .english-books .english-book-image {
+    display: block;
+    width: 30%;
+    transform: translate(31%, 0%);
+}
+
+.english-outer .english-inner .english-book-block .english-books .english-book-image img {
+    display: block;
+    width: 65%;
+    height: auto;
+    border: 1px solid darkblue;
+    border-radius: 10%;
+    margin-top: 16px;
+    box-shadow: 0px 0px 30px #00c2e6;
+}
+
+.english-outer .english-inner .english-book-block .english-books .english-book-content {
+    display: block;
+    width: 70%;
+    margin-top: 5%;
+}
+
+.english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-title {
+    display: inline;
+    font-size: 25px;
+    margin-left: 15%;
+    letter-spacing: 5px;
+    background-color: #fdf4d7;
+    color: #3594eb;
+    border-radius: 20px;
+    border: 1px dotted black;
+}
+
+.english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-description {
+    display: block;
+    margin-top: 10px;
+    width: 400px;
+    color: #2b81bd;
+    text-transform: capitalize;
+    margin-left: 15%;
+}
+
+.english-outer .english-inner .english-book-block .english-books .english-book-content .book-button {
+    display: block;
+    margin-top: 19px;
+    width: 65%;
+    margin-left: 15%;
+    border-radius: 10px;
+}
+
+
+.english-outer .english-inner .english-book-block .english-books .english-book-content .book-button a {
+    display: block;
+    padding: 3px;
+    font-size: 17px;
+    background-color: #6fafda;
+    color: white;
+    border-radius: 10px;
+}
+
+.english-outer .english-inner .english-book-block .english-books .english-book-content .book-button a:hover {
+    background-color: #2b81bd;
+    color: white;
+    text-decoration: none;
+}
+
+.back-btn-englishbook {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: #e97925;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(500px);
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+/* start Media query */
+@media (max-width:1199px) {
+    .english-outer .english-inner .english-book-block .english-books .english-book-image img {
+        margin-top: 35px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content {
+        margin-top: 8%;
+    }
+}
+
+@media (max-width:991px) {
+    .english-banner-img img {
+        height: 250px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-image img {
+        width: 100%;
+        margin-top: 26px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-title {
+        font-size: 16px;
+        margin-left: 19%;
+        letter-spacing: 4px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-description {
+        width: 250px;
+        margin-left: 25%;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .book-button {
+        margin-left: 25%;
+    }
+
+}
+
+@media (max-width:767px) {
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-title {
+        font-size: 13px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-description {
+        width: 204px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-title {
+        font-size: 14px;
+        margin-left: 25%;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width :639px) {
+    .english-outer .english-inner .english-book-block .english-books {
+        width: 82%;
+        margin-left: 11%;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-title {
+        font-size: 15px;
+        margin-left: 22%;
+        letter-spacing: 1px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-description {
+        width: 180px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-image img {
+        width: 106%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width : 479px) {
+    .english-banner-img img {
+        height: 95px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books {
+        margin-top: 10%;
+        height: 350px !important;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-image {
+        display: block;
+        transform: translate(31%, 0%);
+        width: 100%;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-image img {
+        width: 45%;
+        margin-top: 17px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content {
+        display: block;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-title {
+        font-size: 16px;
+        margin-left: 7%;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .english-book-description {
+        width: 92%;
+        font-size: 13px;
+        margin-left: 10%;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .book-button {
+        margin-left: 21%;
+        margin-top: 8px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books .english-book-content .book-button a {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .english-outer .english-inner .english-book-block .english-books {
+        height: 318px;
+    }
+
+    body .back-btn-englishbook {
+        font-size: 16px;
+        transform: translateX(189%);
+        height: 1%;
+    }
+}

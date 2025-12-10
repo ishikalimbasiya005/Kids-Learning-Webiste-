@@ -1,0 +1,111 @@
+.back-btn-shape {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: #a55399;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(250%);
+    margin-bottom: 2%;
+    margin-top: 15px;
+}
+
+.shap-banner {
+    display: block;
+    clear: both;
+    margin-bottom: 5%;
+}
+
+.shap-banner .shap-img-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 15px #b9d6e8;
+}
+
+.note {
+    display: block;
+    font-size: 25px;
+    color: white;
+    background-color: #e7018b;
+    text-shadow: 0px 0px 5px black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    animation: note 3s infinite;
+}
+
+@keyframes note {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.shape-outer {
+    display: block;
+    clear: both;
+}
+
+.shape-outer .shape-inner {
+    display: block;
+}
+
+.shape-outer .shape-inner .shape-block {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.shape-outer .shape-inner .shape-block .shape-card {
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.shape-outer .shape-inner .shape-block .shape-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 4px 4px 10px #bd48ab;
+}
+
+.shape-outer .shape-inner .shape-block .shape-card img:hover {
+    display: block;
+    transform: scale(1.1, 1.1);
+}
+
+/* Start Media Query */
+@media (max-width: 767px) {
+    .shape-outer .shape-inner .shape-block .shape-card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 479px) {
+    .shape-outer .shape-inner .shape-block .shape-card {
+        width: 100%;
+    }
+
+    .shap-banner {
+        margin-bottom: 11%;
+    }
+
+    .back-btn-shape {
+        font-size: 20px;
+        transform: translateX(204%);
+    }
+}
+
+/* end media query */

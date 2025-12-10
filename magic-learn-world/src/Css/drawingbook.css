@@ -1,0 +1,212 @@
+.drawing-banner {
+    display: block;
+    clear: both;
+    margin-bottom: 5%;
+
+}
+
+.drawing-banner .drawing-banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.drawing-outer {
+    display: block;
+    clear: both;
+}
+
+.drawing-outer .drawing-inner {
+    display: block;
+}
+
+.drawing-outer .drawing-inner .drawing-block {
+    display: block;
+    margin-bottom: 5%;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 5%;
+    border: 5px double #2a401c;
+    width: 60%;
+    height: 300px;
+    padding: 2%;
+    margin-left: 22%;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-image {
+    display: block;
+    width: 50%;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-image .drawing-img {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin-left: 19%;
+    border: 1px solid #f1a666;
+    border-radius: 14px;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-title {
+    display: block;
+    font-size: 30px;
+    color: #fcfbe7;
+    background-color: #b8ac1d;
+    border: 2px dotted #fcfbe7;
+    border-radius: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-contents {
+    display: block;
+    font-size: 19px;
+    color: #503816;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 7%;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-button {
+    display: block;
+    background-color: #839fab;
+    margin-left: 15%;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-button:hover {
+    display: block;
+    background-color: #75afc8;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-button a {
+    display: block;
+    font-size: 20px;
+    color: #223b59;
+    font-weight: 600;
+    padding: 2% 50px;
+}
+
+.drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-button a:hover {
+    display: block;
+    color: white;
+}
+
+.back-btn-drawing {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: #b57226;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(250%);
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+/* Start Media Query */
+@media (max-width: 1199px) {
+    .drawing-outer .drawing-inner .drawing-block .drawing-card {
+        width: 70%;
+        margin-left: 19%;
+    }
+}
+
+@media (max-width: 991px) {
+    .drawing-outer .drawing-inner .drawing-block .drawing-card {
+        width: 85%;
+        margin-left: 10%;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-button a {
+        font-size: 20px;
+        padding: 3% 31px;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-contents {
+        margin-bottom: 4%;
+    }
+}
+
+
+@media (max-width:767px) {
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-title {
+        font-size: 23px;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-image .drawing-img {
+        width: 75%;
+        margin-left: 14%;
+    }
+}
+
+@media (max-width:639px) {
+    .drawing-outer .drawing-inner .drawing-block .drawing-card {
+        display: block;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-image .drawing-img {
+        width: 75%;
+        margin-left: 57%;
+        margin-bottom: 15px;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card {
+        height: 450px;
+    }
+
+    .back-btn-drawing {
+        transform: translateX(223%);
+    }
+}
+
+@media (max-width:479px) {
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-image .drawing-img {
+        width: 100%;
+    }
+
+    .back-btn-drawing {
+        font-size: 19px;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card {
+        height: 500px;
+        width: 95%;
+        margin-left: 3%;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-contents {
+        margin-bottom: 13%;
+    }
+
+    .drawing-banner .drawing-banner-image {
+        width: 70%;
+        margin-left: 17%;
+    }
+
+    .drawing-outer .drawing-inner .drawing-block .drawing-card .drawing-content .drawing-button a {
+        font-size: 19px;
+    }
+}
+
+/* /end media query */

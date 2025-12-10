@@ -1,0 +1,163 @@
+.admin-outer {
+    display: block;
+    clear: both;
+    background-image: url('../../public/assets/admin-bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+    margin-top: 6%;
+    box-shadow: 4px 4px 30px #4f57a0;
+}
+
+.admin-outer .admin-inner {
+    display: block;
+    padding-bottom: 6%;
+}
+
+.admin-outer .admin-inner .admin-title {
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.admin-outer .admin-inner .admin-title .admin-title-name {
+    display: inline;
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #4c549f, #fbe7ff, #fdfefc);
+    color: darkblue;
+    padding: 10px;
+    border: 1px solid #f6c7fe;
+    border-radius: 17px;
+}
+
+.admin-outer .admin-inner form {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 4%;
+    border: 2px dashed #64b5fb;
+    background-image: url('../../public/assets/admin-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.admin-outer .admin-inner form label {
+    display: inline;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    background-color: #9dd0f1;
+    padding: 5px;
+    color: darkblue;
+    border-radius: 13px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.admin-outer .admin-inner form input {
+    display: block;
+    margin: 30px auto;
+    font-size: 22px;
+    background-color: #d9e9f8;
+    box-shadow: 4px 4px 10px black;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.admin-outer .admin-inner form .contact-submit {
+    display: block;
+    background-color: #3a438e;
+    color: white;
+    padding: 10px;
+    width: 25%;
+    border: 1px solid white;
+    border-radius: 14px;
+    cursor: pointer;
+    text-shadow: 4px 4px 4px black;
+    font-size: 26px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 6%;
+}
+
+.admin-outer .admin-inner form .contact-submit:hover {
+    display: block;
+    background-color: #707cae;
+}
+
+
+.back-btn1 {
+	display: flex;
+	padding: 15px;
+	margin: 5% auto;
+	background-color: #b8dfff;
+	font-size: 17px;
+	letter-spacing: 1px;
+	color: black;
+    text-shadow: 4px 4px 10px white;
+	border: 1px solid brown;
+	border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Start Media Query */
+@media (max-width:767px) {
+    .admin-outer .admin-inner form {
+        width: 65%;
+    }
+}
+
+@media (max-width: 639px) {
+    .admin-outer .admin-inner .admin-title {
+        padding-top: 10%;
+        padding-bottom: 8%;
+    }
+
+    .admin-outer .admin-inner .admin-title .admin-title-name {
+        font-size: 30px;
+    }
+
+    .admin-outer .admin-inner form {
+        width: 90%;
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 479px) {
+    .admin-outer .admin-inner .admin-title {
+        padding-bottom: 15%;
+    }
+
+    .admin-outer .admin-inner .admin-title .admin-title-name {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .admin-outer .admin-inner form label {
+        font-size: 19px;
+    }
+
+    .admin-outer .admin-inner form input {
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+
+    .admin-outer .admin-inner form {
+        width: 100%;
+    }
+
+    .admin-outer .admin-inner form .contact-submit .Login {
+        font-size: 21px;
+    }
+
+    .admin-outer .admin-inner form .contact-submit {
+        padding: 0px;
+    }
+}
+
+/* end media query */

@@ -1,0 +1,109 @@
+/* ManageUsers.css */
+
+.manage-users {
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    min-height: 80vh;
+}
+
+.manage-title {
+    text-align: center;
+    color: #253863;
+    margin-bottom: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.manage-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.manage-thead {
+    background: linear-gradient(90deg, #ffdf85, #87cefa);
+    color: #253863;
+    font-weight: bold;
+}
+
+.manage-thead th {
+    padding: 15px;
+    text-align: center;
+}
+
+.manage-tbody td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+    font-size: 16px;
+}
+
+.manage-tbody tr:hover {
+    background-color: #f0f8ff;
+    transition: 0.3s;
+}
+
+.back-btn {
+	display: flex;
+	padding: 15px;
+	margin: 5% auto;
+	background-color: #94d0ed;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #253863;
+	border: 1px solid brown;
+	border-radius: 20px;
+	box-shadow: 4px 4px 10px black;
+}
+.back-btn:hover {
+    cursor: pointer;
+    background-color: #e3dba0;
+    color: black;
+    transition: 0.3s;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .manage-table, .manage-thead, .manage-tbody, .manage-tr, .manage-thead th, .manage-tbody td {
+        display: block;
+    }
+
+    .manage-thead tr {
+        display: none;
+    }
+
+    .manage-tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .manage-tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #253863;
+    }
+}

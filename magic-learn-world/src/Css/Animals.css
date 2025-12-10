@@ -1,0 +1,244 @@
+.animal-banner {
+    display: block;
+    clear: both;
+}
+
+.animal-banner .Farm-banner {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.animal-outer {
+    display: block;
+    clear: both;
+    background-image: url('/public/assets/Farm-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.animal-outer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+
+.animal-outer .animal-inner {
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.animal-outer .animal-inner .animal-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card {
+    display: block;
+    width: 33.33%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card:hover {
+    display: block;
+    width: 33.33%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    transform: skew(2deg, 3deg);
+    transition: all 0.3s ease;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .lion {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .elephant {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .cow {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .monkey {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .bear {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .fox {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .horse {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .owl {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .giraffe {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .snake {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .goat {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .zebra {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .hippo {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .tiger {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .sheep {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .donkey {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .rooster {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.animal-outer .animal-inner .animal-block .animal-card .wolf {
+    display: block;
+    width: 80%;
+    height: auto;
+    border: 1px solid green;
+    border-radius: 15%;
+}
+
+.back-btn-animals {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: lightcoral;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(250%);
+    margin-bottom: 2%;
+}
+
+/* start media query */
+@media (max-width: 479px) {
+    .animal-outer .animal-inner .animal-block .animal-card {
+        width: 50%;
+    }
+
+    .animal-outer .animal-inner .animal-block .animal-card:hover {
+        width: 50%;
+    }
+
+    .back-btn-animals {
+	font-size: 15px;
+	transform: translateX(175%);
+}
+
+.animal-banner .Farm-banner {
+	height: 200px;
+}
+}
+
+
+
+/* end media query */

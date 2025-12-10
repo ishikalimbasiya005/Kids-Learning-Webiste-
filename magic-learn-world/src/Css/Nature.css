@@ -1,0 +1,133 @@
+.nature-img-banner {
+    display: block;
+}
+
+.nature-img-banner .nature-banner {
+    display: block;
+    width: 100%;
+    height: 300px;
+    box-shadow: 4px 4px 10px #466941;
+    margin-bottom: 15px;
+}
+
+.nature-outer {
+    display: block;
+    clear: both;
+}
+
+.nature-outer .nature-inner {
+    display: block;
+}
+
+.nature-outer .nature-inner .nature-block {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.nature-outer .nature-inner .nature-block .nature-cards {
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.nature-outer .nature-inner .nature-block .nature-cards .nature-img {
+    display: block;
+}
+
+.nature-outer .nature-inner .nature-block .nature-cards .nature-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px dotted #9ec328;
+    border-radius: 23px;
+}
+
+.nature-outer .nature-inner .nature-block .nature-cards .nature-img img:hover {
+    display: block;
+    transform: scale(1.1, 1.0);
+    box-shadow: 4px 4px 10px black;
+}
+
+.back-btn-nature {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: #31543c;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(250%);
+    margin-bottom: 2%;
+    margin-top: 15px;
+}
+
+.d-nature {
+    display: block;
+    width: 10%;
+    height: auto;
+    margin: 0 auto;
+    transform: translate(0px, 25px);
+}
+
+/* Start Media Query */
+@media (max-width : 991px) {
+    .nature-img-banner .nature-banner {
+        height: 200px;
+    }
+
+    .d-nature {
+        width: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .nature-outer .nature-inner .nature-block .nature-cards {
+        width: 50%;
+    }
+
+    .back-btn-nature {
+        transform: translateX(233%);
+    }
+}
+
+@media (max-width: 639px) {
+    .d-nature {
+        width: 23%;
+    }
+
+    .back-btn-nature {
+        transform: translateX(219%);
+    }
+}
+
+@media (max-width :479px) {
+    .nature-img-banner .nature-banner {
+        height: 100px;
+    }
+
+    .nature-outer .nature-inner .nature-block .nature-cards {
+        width: 100%;
+    }
+
+    .back-btn-nature {
+        font-size: 19px;
+        transform: translateX(206%);
+    }
+
+    .d-nature {
+        width: 30%;
+    }
+
+    .back-btn-nature {
+        font-size: 19px;
+        transform: translateX(197%);
+    }
+}
+
+
+
+/* End media query */

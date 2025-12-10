@@ -1,0 +1,78 @@
+.Discipline-banner{
+    display: block;
+    clear: both;
+    margin-bottom: 5%;
+}
+
+.discipline-banner-img{
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+.discipline-outer {
+    display: block;
+    clear: both;
+}
+
+.discipline-outer .discipline-inner {
+    display: block;
+}
+
+.discipline-outer .discipline-inner .discipline-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12%;
+    box-sizing: border-box;
+}
+
+.discipline-outer .discipline-inner .discipline-block .discipline-card {
+    display: block;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.discipline-outer .discipline-inner .discipline-block .discipline-card img {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 5px dotted #6e668e;
+}
+
+.discipline-outer .discipline-inner .discipline-block .discipline-card img:hover {
+    display: block;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px #6e668e;
+}
+
+/* Start Media Query */
+@media (max-width: 991px) {
+    .discipline-banner-img {
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+}
+
+@media (max-width: 640px) {
+    .discipline-banner-img {
+        height: 220px;
+    }
+
+    .discipline-outer .discipline-inner .discipline-block {
+        padding-left: 5%;
+    }
+
+    .discipline-outer .discipline-inner .discipline-block .discipline-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .discipline-outer .discipline-inner .discipline-block .discipline-card img {
+        width: 90%;
+    }
+}
+/* end media query */

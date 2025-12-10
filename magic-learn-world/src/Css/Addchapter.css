@@ -1,0 +1,105 @@
+.add-chapter-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #fff7e6;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.add-chapter-container h2 {
+    text-align: center;
+    color: #ff7f50;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-shadow: 1px 1px 2px #ffefd5;
+}
+
+.add-chapter-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ff6347;
+    font-size: 16px;
+}
+
+.add-chapter-container input,
+.add-chapter-container select,
+.add-chapter-container textarea {
+    width: 90%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ffb347;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.add-chapter-container input:focus,
+.add-chapter-container select:focus,
+.add-chapter-container textarea:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 8px rgba(255, 127, 80, 0.5);
+}
+
+.add-chapter-container input::placeholder,
+.add-chapter-container textarea::placeholder {
+    color: #ffa07a;
+    font-style: italic;
+}
+
+.add-chapter-container button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff7f50, #ffb347);
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 3%;
+}
+
+.add-chapter-container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.4);
+}
+
+.add-chapter-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto;      
+    padding: 10px 25px;     
+    background-color: #4CAF50;  
+    color: white;               
+    border: none;               
+    border-radius: 5px;         
+    font-size: 16px;            
+    cursor: pointer;            
+    transition: background-color 0.3s ease; 
+}
+
+.back-button:hover {
+    background-color: #45a049;  
+}
+
+/* Start Media Query */
+ @media (max-width: 600px) { 
+    .add-chapter-container {
+        padding: 20px;
+        margin: 30px 15px;
+    }
+
+    .add-chapter-container h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,112 @@
+.habits-banner {
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+.habits-banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.habits-title {
+    display: block;
+    font-size: 75px;
+    color: #6f7b98;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 9px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(89%, -45%);
+}
+
+
+.habits-outer {
+    display: block;
+    clear: both;
+}
+
+.habits-outer .habits-inner {
+    display: block;
+}
+
+.habits-outer .habits-inner .habits-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12%;
+    box-sizing: border-box;
+}
+
+.habits-outer .habits-inner .habits-block .habits-card {
+    display: block;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.habits-outer .habits-inner .habits-block .habits-card img {
+    display: block;
+    width: 70%;
+    height: auto;
+    border: 5px dotted #6e668e;
+}
+
+.habits-outer .habits-inner .habits-block .habits-card img:hover {
+    display: block;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px #6e668e;
+}
+
+/* Start Media Query */
+@media (max-width: 1199px) {
+    .habits-title {
+        transform: translate(56%, -44%);
+    }
+}
+
+@media (max-width: 768px) {
+    .habits-title {
+        font-size: 50px;
+        transform: translate(72%, -40%);
+    }
+
+    .habits-outer .habits-inner .habits-block {
+        padding-left: 5%;
+    }
+
+    .habits-outer .habits-inner .habits-block .habits-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .habits-outer .habits-inner .habits-block .habits-card img {
+        width: 90%;
+    }
+}
+
+@media (max-width:991px) {
+    .habits-title {
+        transform: translate(46%, -40%);
+    }
+}
+
+@media (max-width:639px) {
+    .habits-title {
+        transform: translate(24%, -3%);
+    }
+
+    .habits-banner {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    .habits-title {
+    font-size: 28px;
+    }
+}
+
+/* end media query */

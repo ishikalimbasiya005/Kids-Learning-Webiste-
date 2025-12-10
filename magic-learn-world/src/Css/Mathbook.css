@@ -1,0 +1,206 @@
+.math-banner {
+    display: block;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.math-banner img {
+    display: block;
+    width: 85%;
+    height: auto;
+    box-shadow: 4px 4px 20px #e83880;
+    margin: 0 auto;
+}
+
+.math-outer {
+    display: block;
+    clear: both;
+}
+
+.math-outer .math-inner {
+    display: block;
+}
+
+.math-outer .math-inner .math-block {
+    display: block;
+}
+
+.math-outer .math-inner .math-block .math-cards {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 5px double #e04384;
+    width: 60%;
+    margin: 0 auto;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.math-outer .math-inner .math-block .math-cards .math-image {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.math-outer .math-inner .math-block .math-cards .math-image img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-top: 21px;
+    margin-left: 50px;
+}
+
+.math-outer .math-inner .math-block .math-cards .math-content {
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.math-outer .math-inner .math-block .math-cards .math-content .math-title {
+    display: block;
+    font-size: 25px;
+    color: #2a7cd2;
+    background-color: #b9e3f9;
+    border: 2px dotted #c477fa;
+    border-radius: 10px;
+    margin-bottom: 11px;
+    margin-top: 50px;
+    width: 90%;
+    text-align: center;
+}
+
+.math-outer .math-inner .math-block .math-cards .math-content .math-text {
+    display: block;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #b7672d;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.math-outer .math-inner .math-block .math-cards .math-content .math-book-button {
+    display: inline-flex;
+    background-color: #ee3581;
+    color: white;
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 14px;
+}
+
+
+.math-outer .math-inner .math-block .math-cards .math-content .math-book {
+    display: inline-flex;
+    background-color: #ee3581;
+    color: white;
+    font-size: 24px;
+    border: 1px solid black;
+    border-radius: 14px;
+    width: 180px;
+    padding-left: 60px;
+}
+
+.math-outer .math-inner .math-block .math-cards .math-content .math-book:hover {
+    display: block;
+    transform: rotate(3deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.back-btn-math {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: #c56cb3;
+    color: white;
+    width: 15%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 15px;
+    transform: translateX(255%);
+    margin-bottom: 2%;
+}
+
+/* Start media query */
+@media (max-width: 991px) {
+    .math-outer .math-inner .math-block .math-cards {
+        width: 80%;
+    }
+}
+
+@media (max-width:767px) {
+    .math-outer .math-inner .math-block .math-cards {
+        width: 95%;
+    }
+}
+
+@media (max-width:639px) {
+    .math-outer .math-inner .math-block .math-cards .math-content .math-title {
+        font-size: 18px;
+    }
+
+    .math-outer .math-inner .math-block .math-cards .math-content .math-text {
+        font-size: 18px;
+    }
+
+    .math-outer .math-inner .math-block .math-cards .math-image img {
+        width: 82%;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+
+    .math-outer .math-inner .math-block .math-cards .math-content .math-book {
+        font-size: 17px;
+        width: 125px;
+        padding-left: 33px;
+    }
+
+    .math-outer .math-inner .math-block .math-cards {
+        height: 275px;
+    }
+
+    .math-banner img {
+        width: 100%;
+    }
+}
+
+@media (max-width:479px) {
+    .math-outer .math-inner .math-block .math-cards .math-image img {
+        width: 52%;
+        margin-left: 58px;
+        margin-top: 3px;
+    }
+
+    .math-outer .math-inner .math-block .math-cards .math-image {
+        width: 100%;
+    }
+
+    .math-outer .math-inner .math-block .math-cards .math-content {
+        width: 100%;
+        margin-left: 12px;
+    }
+
+    .math-outer .math-inner .math-block .math-cards .math-content .math-title {
+        margin-top: 7px;
+    }
+
+    .math-outer .math-inner .math-block .math-cards .math-content .math-text {
+        font-size: 15px;
+        margin-top: 11px;
+    }
+
+    .math-outer .math-inner .math-block .math-cards {
+        height: 288px;
+    }
+
+    .back-btn-math {
+        font-size: 19px;
+        width: 15%;
+        transform: translateX(199%);
+    }
+
+    .math-outer .math-inner .math-block .math-cards {
+        height: 302px;
+    }
+}
+
+/* end media query */

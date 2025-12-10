@@ -1,0 +1,129 @@
+.register-body {
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.register-form {
+    background-color: #fff9e6;
+    padding: 20px 11%;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-logo-register{
+    display: flex;
+}
+.register-logo{
+    display: block;
+    width: 8%;
+}
+
+.register-title {
+    font-size: 31px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    width: 80%;
+    text-align: center;
+    text-shadow: 1px 1px #fff;
+}
+
+.register-label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #ff8c42;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.register-input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ffd699;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.register-input:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 4px #ff6f61;
+}
+
+.register-button {
+    width: 100%;
+    padding: 8px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #ff8c42;
+    transform: scale(1.03);
+}
+
+.register-msg {
+    font-size: 24px;
+    color: #ff6f61;
+    padding-top: 1%;
+}
+
+.register-msg a {
+    color: #8d7ba9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.register-msg a:hover {
+    text-decoration: underline;
+}
+
+/* Start Media Query */
+@media (max-width: 320px) {
+    .register-form {
+        width: 85%;
+        padding: 15px 5%;
+    }
+
+    .register-title {
+        font-size: 24px;
+        padding-top: 1%;
+    }
+
+    .register-label {
+        font-size: 16px;
+    }
+
+    .register-input {
+        font-size: 12px;
+        padding: 6px 0px;
+    }
+
+    .register-button {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .register-msg {
+        font-size: 18px;
+        padding-top: 2%;
+    }
+}
+/* end media query */
